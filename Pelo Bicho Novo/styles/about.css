@@ -1,0 +1,80 @@
+.header {
+    padding-block: 5rem ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/about4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.service__card img {
+    border-radius: 50%; 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (width > 480px) {
+    .header__content h1{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+
+@media (width > 768px) {
+
+    nav {
+        padding: 2rem 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .nav__bar {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__menu__btn {
+        display: none;
+    }
+
+    .nav__links {
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .header {
+        padding-top: 0;
+    }
+
+    .header__content h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .experience__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .contact__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
